@@ -29,5 +29,13 @@ namespace NPortAudio.Native
         /// <returns>PortAudio Build version string.</returns>
         [DllImport(DllImports.PortAudio)]
         internal static extern IntPtr Pa_GetVersionText();
+
+        /// <summary>
+        /// Translate the supplied PortAudio error code into a human readable message.
+        /// </summary>
+        /// <param name="error">Error code to retrieve description of.</param>
+        /// <returns>Description of given error.</returns>
+        [DllImport(DllImports.PortAudio)]
+        internal static extern IntPtr Pa_GetErrorText(PortAudioError error);
     }
 }

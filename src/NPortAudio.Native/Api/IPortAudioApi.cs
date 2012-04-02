@@ -27,5 +27,12 @@
         /// </example>
         /// <returns>PortAudio Build version string.</returns>
         string GetVersionText();
+
+        /// <summary>
+        /// Translate the supplied PortAudio error code into a human readable message.
+        /// </summary>
+        /// <param name="error">Error code to retrieve description of.</param>
+        /// <returns>Description of given error.</returns>
+        string GetErrorText(PortAudioError error);
     }
 }

@@ -37,5 +37,16 @@ namespace NPortAudio.Native
             var ptr = PortAudioApiNative.Pa_GetVersionText();
             return Marshal.PtrToStringAnsi(ptr);
         }
+
+        /// <summary>
+        /// Translate the supplied PortAudio error code into a human readable message.
+        /// </summary>
+        /// <param name="error">Error code to retrieve description of.</param>
+        /// <returns>Description of given error.</returns>
+        public string GetErrorText(PortAudioError error)
+        {
+            var ptr = PortAudioApiNative.Pa_GetErrorText(error);
+            return Marshal.PtrToStringAnsi(ptr);
+        }
     }
 }
