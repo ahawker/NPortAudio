@@ -19,5 +19,15 @@ namespace NPortAudio.Native
         /// <returns>PortAudio Build.</returns>
         [DllImport(DllImports.PortAudio)]
         internal static extern int Pa_GetVersion();
+
+        /// <summary>
+        /// Retrieve a textual description of the current PortAudio build.
+        /// </summary>
+        /// <example>
+        /// "PortAudio V19-devel 13 October 2002".
+        /// </example>
+        /// <returns>PortAudio Build version string.</returns>
+        [DllImport(DllImports.PortAudio)]
+        internal static extern IntPtr Pa_GetVersionText();
     }
 }

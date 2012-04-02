@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.InteropServices;
 
 namespace NPortAudio.Native
 {
@@ -22,6 +23,19 @@ namespace NPortAudio.Native
         public int GetVersion()
         {
             return PortAudioApiNative.Pa_GetVersion();
+        }
+
+        /// <summary>
+        /// Retrieve a textual description of the current PortAudio build.
+        /// </summary>
+        /// <example>
+        /// "PortAudio V19-devel 13 October 2002".
+        /// </example>
+        /// <returns>PortAudio Build version string.</returns>
+        public string GetVersionText()
+        {
+            var ptr = PortAudioApiNative.Pa_GetVersionText();
+            return Marshal.PtrToStringAnsi(ptr);
         }
     }
 }
