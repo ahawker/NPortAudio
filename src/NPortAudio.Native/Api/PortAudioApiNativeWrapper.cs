@@ -1,6 +1,6 @@
 ﻿namespace NPortAudio.Native
 {
-    public class PortAudioApiNativeWrapper
+    internal sealed class PortAudioApiNativeWrapper
     {
          
     }
