@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPortAudio.Managed", "src\NPortAudio.Managed\NPortAudio.Managed.csproj", "{06AB5CD2-CFC4-46B7-92EE-33BB9F3B3031}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPortAudio.Managed.Tests", "src\NPortAudio.Managed.Tests\NPortAudio.Managed.Tests.csproj", "{C2AF3251-FFBF-4B8A-97F7-FAFE4BC56159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPortAudio.Native", "src\NPortAudio.Native\NPortAudio.Native.csproj", "{2F684332-22CE-4674-A067-86E6E9CFE04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPortAudio.Native.Tests", "src\NPortAudio.Native.Tests\NPortAudio.Native.Tests.csproj", "{98EDF0E3-F721-47A8-92ED-8205172DE335}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06AB5CD2-CFC4-46B7-92EE-33BB9F3B3031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06AB5CD2-CFC4-46B7-92EE-33BB9F3B3031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06AB5CD2-CFC4-46B7-92EE-33BB9F3B3031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06AB5CD2-CFC4-46B7-92EE-33BB9F3B3031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AF3251-FFBF-4B8A-97F7-FAFE4BC56159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AF3251-FFBF-4B8A-97F7-FAFE4BC56159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AF3251-FFBF-4B8A-97F7-FAFE4BC56159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AF3251-FFBF-4B8A-97F7-FAFE4BC56159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F684332-22CE-4674-A067-86E6E9CFE04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F684332-22CE-4674-A067-86E6E9CFE04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F684332-22CE-4674-A067-86E6E9CFE04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F684332-22CE-4674-A067-86E6E9CFE04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EDF0E3-F721-47A8-92ED-8205172DE335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EDF0E3-F721-47A8-92ED-8205172DE335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EDF0E3-F721-47A8-92ED-8205172DE335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EDF0E3-F721-47A8-92ED-8205172DE335}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
