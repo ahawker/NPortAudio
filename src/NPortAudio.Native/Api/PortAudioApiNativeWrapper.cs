@@ -1,7 +1,12 @@
-﻿namespace NPortAudio.Native
+﻿using System;
+
+namespace NPortAudio.Native
 {
-    internal sealed class PortAudioApiNativeWrapper
+    internal sealed class PortAudioApiNativeWrapper : IPortAudioApi
     {
-         
+        public IPortAudioExtensionHostCollection Hosts
+        {
+            get { throw new NotImplementedException(); }
+        }
     }
 }

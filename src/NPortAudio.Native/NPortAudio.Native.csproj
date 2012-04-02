@@ -41,6 +41,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\DllImports.cs" />
+    <Compile Include="Api\Hosts\Alsa\IPortAudioAlsaApi.cs" />
+    <Compile Include="Api\Hosts\Asio\IPortAudioAsioApi.cs" />
+    <Compile Include="Api\Hosts\CoreAudio\IPortAudioCoreAudioApi.cs" />
+    <Compile Include="Api\Hosts\DirectSound\IPortAudioDirectSoundApi.cs" />
+    <Compile Include="Api\Hosts\IPortAudioExtensionHost.cs" />
+    <Compile Include="Api\Hosts\IPortAudioExtensionHostCollection.cs" />
+    <Compile Include="Api\Hosts\Jack\IPortAudioJackApi.cs" />
+    <Compile Include="Api\Hosts\WasApi\IPortAudioWasApi.cs" />
+    <Compile Include="Api\Hosts\Wdm\IPortAudioWdmApi.cs" />
+    <Compile Include="Api\Hosts\Windows\IPortAudioWindowsApi.cs" />
+    <Compile Include="Api\Hosts\Wmme\IPortAudioWmmeApi.cs" />
     <Compile Include="Api\IPortAudioApi.cs" />
     <Compile Include="Api\PortAudioApiNative.cs" />
     <Compile Include="Api\PortAudioApiNativeWrapper.cs" />
