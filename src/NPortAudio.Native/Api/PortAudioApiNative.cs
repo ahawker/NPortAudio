@@ -1,7 +1,23 @@
-﻿namespace NPortAudio.Native
+﻿using System;
+using System.Security;
+using System.Runtime.InteropServices;
+
+namespace NPortAudio.Native
 {
+    /// <summary>
+    /// Static class for calling extern functions exposed by portaudio.dll
+    /// </summary>
+    /// <remarks>
+    /// Full API docs can be found at: http://portaudio.com/docs/
+    /// </remarks>
+    [SuppressUnmanagedCodeSecurity]
     internal static class PortAudioApiNative
     {
-         
+        /// <summary>
+        /// Retrieves the release number of the currently running PortAudio build.
+        /// </summary>
+        /// <returns>PortAudio Build.</returns>
+        [DllImport(DllImports.PortAudio)]
+        internal static extern int Pa_GetVersion();
     }
 }
